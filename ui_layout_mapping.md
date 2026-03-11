@@ -19,7 +19,7 @@
 | `NestedScrollView` | `Scroll` + `.nestedScroll()` | 嵌套滚动策略配置 |
 | `ViewPager` / `ViewPager2` | `Swiper` 组件 | 页面滑动切换，支持 `.autoPlay()`、`.indicator()`、`.loop()` |
 | `SwipeRefreshLayout` | `Refresh` 组件 | 下拉刷新，通过 `.onRefreshing()` 回调处理刷新 |
-| `RecyclerView` | `List` 组件 | 高性能列表，使用 `List` + `ForEach`/`LazyForEach` 渲染 `ListItem` |
+| `RecyclerView` | `List` 组件 | 高性能列表，使用 `List` + `ForEach`/`LazyForEach` 渲染子组件 |
 | `RecyclerView` (GridLayoutManager) | `Grid` 组件 | 网格布局，通过 `.columnsTemplate()` 设置列数 |
 | `RecyclerView` (StaggeredGridLayoutManager) | `WaterFlow` 组件 | 瀑布流布局 |
 | `ListView` | `List` 组件 | 传统列表，使用 `List` 组件实现 |
@@ -29,6 +29,13 @@
 | `BottomNavigationView` | `Tabs` + `BarPosition.End` | 底部导航栏 |
 | `CardView` | `Card` 组件 / `Container` + 样式 | 卡片视图，使用 `Card` 组件或自定义样式实现 |
 | `Space` | `Blank` 组件 | 空白间隔，使用 `Blank` 组件实现 |
+| `FragmentContainerView` | `NavDestination` / `@Component` | 片段容器视图，映射到 `NavDestination` 或自定义组件 |
+| `RecyclerViewFastScroller` | 自定义组件 | 列表快速滚动条，需自定义实现 |
+| `MySearchMenu` (自定义) | `Search` 组件 + 自定义菜单 | 自定义搜索菜单，使用 `Search` 组件并添加自定义菜单 |
+| `MyViewPager` (自定义) | `Swiper` 组件 | 自定义视图分页器，使用 `Swiper` 组件实现 |
+| `MyRecyclerView` (自定义) | `List` 组件 | 自定义 RecyclerView，使用 `List` 组件实现 |
+| `MyTextView` (自定义) | `Text` 组件 | 自定义 TextView，使用 `Text` 组件实现 |
+| `MyAppCompatCheckbox` (自定义) | `Checkbox` 组件 | 自定义 Checkbox，使用 `Checkbox` 组件实现 |
 
 ## 布局属性映射
 

@@ -5,7 +5,7 @@
 | 安卓部分UI | 对应鸿蒙部分UI | 其他说明 |
 |-----------|---------------|---------|
 | `TextView` | `Text` 组件 | 文本显示，ArkUI 通过 `Text('内容')` 创建，支持 `.fontSize()`、`.fontColor()`、`.fontWeight()` 链式属性 |
-| `TextView` (spannable) | `Span` / `RichText` | 富文本，ArkUI 用 `Text` 内嵌 `Span`、`ImageSpan` 子组件，或 `RichText` 渲染 HTML |
+| `TextView` (spannable) | `Text` + `Span` / `RichText` | 富文本，ArkUI 用 `Text` 内嵌 `Span` 子组件，或 `RichText` 渲染 HTML |
 | `Button` | `Button` 组件 | 按钮，支持 `ButtonType.Capsule`/`Circle`/`Normal` 三种形态 |
 | `ImageButton` | `Button` + `Image` 组合 | ArkUI 中用 `Button` 包裹 `Image` 子组件实现图标按钮 |
 | `FloatingActionButton` | `Button` + `ButtonType.Circle` + `.position()` | 圆形 Button + 定位实现悬浮效果 |
@@ -39,6 +39,20 @@
 | `View` | `Component` / `Container` | 基础视图，使用 `Component` 或 `Container` 实现 |
 | `SurfaceView` | `TextureView` |  surface 视图，使用 `TextureView` 实现 |
 | `TextureView` | `TextureView` | 纹理视图 |
+| `MaterialToolbar` | `Navigation` 标题栏 | Material 工具栏，映射到 `Navigation` 组件 |
+| `MaterialButton` | `Button` 组件 | Material 按钮，使用 `Button` 组件并设置样式 |
+| `MaterialCardView` | `Card` 组件 | Material 卡片，使用 `Card` 组件实现 |
+| `MaterialSwitch` | `Toggle` 组件 | Material 开关，使用 `Toggle` 组件并设置 `ToggleType.Switch` |
+| `TextInputLayout` | `TextInput` + 自定义容器 | 文本输入布局，需自定义实现标签和错误提示 |
+| `TextInputEditText` | `TextInput` 组件 | 文本输入编辑框，使用 `TextInput` 组件 |
+| `AppBarLayout` | `Navigation` 标题栏 | 应用栏布局，映射到 `Navigation` 组件 |
+| `BottomSheetDragHandleView` | 自定义组件 | 底部抽屉拖动句柄，需自定义实现 |
+| `Space` | `Blank` 组件 | 空白间隔，使用 `Blank` 组件实现 |
+| `CropImageView` (第三方) | 自定义组件 | 图片裁剪视图，需自定义实现 |
+| `RecyclerViewFastScroller` (第三方) | 自定义组件 | 列表快速滚动条，需自定义实现 |
+| `VrPanoramaView` (Google VR) | 自定义组件 | VR 全景视图，需自定义实现 |
+| `VrVideoView` (Google VR) | 自定义组件 | VR 视频视图，需自定义实现 |
+| 自定义组件 (如 ChapterSeekBar, TotpProgressBar, EditorDrawCanvas 等) | 自定义组件 | 自定义组件需要重新实现，保持功能和外观一致 |
 
 ## 弹窗与提示组件映射
 
