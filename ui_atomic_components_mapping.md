@@ -21,13 +21,24 @@
 | `SeekBar` | `Slider` 组件 | 滑动条 |
 | `RatingBar` | `Rating` 组件 | 评分条 |
 | `Spinner` | `Select` 组件 | 下拉选择 |
+| `AutoCompleteTextView` | `TextInput` + 自定义下拉 | 自动完成输入，需自定义实现下拉建议 |
+| `MultiAutoCompleteTextView` | `TextInput` + 自定义下拉 | 多自动完成输入，需自定义实现 |
 | `DatePicker` / `TimePicker` | `DatePicker` / `TimePicker` | 日期/时间选择器，还有 `DatePickerDialog`/`TimePickerDialog` 弹窗式 |
 | `CalendarView` | `CalendarPicker` 组件 | 日历视图 |
 | `WebView` | `Web` 组件 | 网页加载，使用 `WebviewController` 控制 |
 | `VideoView` | `Video` 组件 | 视频播放，支持 `.autoPlay()`、`.controls()`、`.loop()` |
+| `AudioRecord` | `AudioRecorder` 组件 | 音频录制 |
+| `MediaPlayer` | `Audio` 组件 | 音频播放 |
 | `Divider` (Material) | `Divider` 组件 | 分隔线 |
 | `Badge` (Material) | `Badge` 组件 | 角标/徽章 |
 | `Marquee` (ellipsize) | `Marquee` 组件 | 跑马灯，ArkUI 提供独立 Marquee 组件 |
+| `Chip` (Material) | `Chip` 组件 | 芯片/标签 |
+| `TextClock` | `Text` + 时间格式化 | 文本时钟，使用 `Text` 组件显示格式化的时间 |
+| `AnalogClock` | 自定义组件 | 模拟时钟，需自定义实现 |
+| `DigitalClock` | `Text` + 时间格式化 | 数字时钟，使用 `Text` 组件显示格式化的时间 |
+| `View` | `Component` / `Container` | 基础视图，使用 `Component` 或 `Container` 实现 |
+| `SurfaceView` | `TextureView` |  surface 视图，使用 `TextureView` 实现 |
+| `TextureView` | `TextureView` | 纹理视图 |
 
 ## 弹窗与提示组件映射
 
@@ -40,6 +51,11 @@
 | `Snackbar` | `promptAction.showToast()` + 自定义 | 无直接对应，需自定义实现带操作按钮的效果 |
 | `PopupWindow` | `.bindPopup()` | 气泡弹窗 |
 | `PopupMenu` / `ContextMenu` | `.bindMenu()` / `.bindContextMenu()` | 菜单弹窗 |
+| `DatePickerDialog` | `DatePickerDialog.show()` | 日期选择对话框 |
+| `TimePickerDialog` | `TimePickerDialog.show()` | 时间选择对话框 |
+| `NumberPicker` | `Stepper` 组件 / 自定义 | 数字选择器，使用 `Stepper` 组件或自定义实现 |
+| `ProgressDialog` | `@CustomDialog` + `Progress` | 进度对话框，自定义实现 |
+| `AlertDialog.Builder` | `AlertDialog.show()` 参数配置 | 对话框构建器 |
 
 ## 动画API映射
 
@@ -57,6 +73,16 @@
 | `MotionLayout` | 组合 `animateTo` + `@State` 状态切换 | 无直接对应，通过状态变量控制多组属性 + animateTo 过渡 |
 | `Lottie` (第三方) | `@ohos/lottie` (三方库) | Lottie 动画，加载 JSON 动画文件 |
 | `AnimatedVectorDrawable` | `ImageAnimator` 组件 | 帧动画，逐帧播放图片序列 |
+| `AnimationDrawable` | `ImageAnimator` 组件 | 帧动画，逐帧播放图片序列 |
+| `Interpolator` | `Curve` | 插值器，控制动画速度变化 |
+| `AccelerateInterpolator` | `Curve.EaseIn` | 加速插值器 |
+| `DecelerateInterpolator` | `Curve.EaseOut` | 减速插值器 |
+| `AccelerateDecelerateInterpolator` | `Curve.EaseInOut` | 加速减速插值器 |
+| `LinearInterpolator` | `Curve.Linear` | 线性插值器 |
+| `BounceInterpolator` | `Curve.Bounce` | 弹跳插值器 |
+| `OvershootInterpolator` | `Curve.Overshoot` | 过冲插值器 |
+| `AnticipateInterpolator` | `Curve.Anticipate` | 预期插值器 |
+| `AnticipateOvershootInterpolator` | `Curve.AnticipateOvershoot` | 预期过冲插值器 |
 
 ## 手势API映射
 
@@ -71,8 +97,13 @@
 | `RotationGestureDetector` (自定义) | `RotationGesture` | 旋转手势，回调提供 `angle` 角度 |
 | 拖拽 (`View.OnDragListener`) | `PanGesture` / `.onDragStart()`/`.onDrop()` | `PanGesture` 自由拖动；`.onDragStart()`/`.onDrop()` 拖放操作 |
 | `OnDoubleTapListener` | `TapGesture({ count: 2 })` | 双击手势 |
+| `OnTripleTapListener` | `TapGesture({ count: 3 })` | 三击手势 |
 | 手势冲突 (`requestDisallowInterceptTouchEvent`) | `GestureMode.Exclusive`/`Parallel`/`Sequence` | 手势竞争策略，互斥/并行/顺序 |
 | `OnFocusChangeListener` | `.onFocus()` / `.onBlur()` | 焦点事件 |
+| `OnGenericMotionListener` | `.onGenericMotion()` | 通用运动事件 |
+| `OnHoverListener` | `.onHover()` | 悬停事件 |
+| `OnKeyListener` | `.onKeyEvent()` | 按键事件 |
+| `OnTouchModeChangeListener` | `.onTouchModeChange()` | 触摸模式变化事件 |
 
 ## 无障碍API映射
 
@@ -80,11 +111,18 @@
 |-----------|---------------|---------|
 | `android:contentDescription` | `.accessibilityText()` | 无障碍文本描述 |
 | `android:importantForAccessibility` | `.accessibilityLevel()` | 无障碍重要性，`"yes"`/`"no"`/`"no-hide-descendants"` |
+| `android:labelFor` | `.accessibilityLabelFor()` | 标签关联 |
+| `android:hint` | `.placeholder()` | 输入提示 |
 | `AccessibilityNodeInfo` | `AccessibilityExtensionContext` | 无障碍节点信息 |
 | `AccessibilityService` | `AccessibilityExtensionAbility` | 无障碍服务 |
 | `AccessibilityEvent` | `AccessibilityEvent` | 无障碍事件 |
 | `AccessibilityDelegate` | `.accessibilityGroup(true)` + `.accessibilityDescription()` | 组件分组，合并多个子组件为一个无障碍焦点 |
 | `AccessibilityManager` | `@ohos.accessibility` 模块 | 无障碍管理器 |
+| `View.announceForAccessibility()` | `accessibility.announce()` | 无障碍播报 |
+| `ExploreByTouchHelper` | 自定义无障碍实现 | 触摸探索辅助 |
+| `AccessibilityEvent.TYPE_VIEW_CLICKED` | `AccessibilityEvent.Type.CLICK` | 点击事件 |
+| `AccessibilityEvent.TYPE_VIEW_FOCUSED` | `AccessibilityEvent.Type.FOCUS` | 焦点事件 |
+| `AccessibilityEvent.TYPE_VIEW_TEXT_CHANGED` | `AccessibilityEvent.Type.TEXT_CHANGE` | 文本变化事件 |
 
 ## 迁移注意事项
 
