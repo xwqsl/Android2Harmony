@@ -1,0 +1,866 @@
+{
+  "sourceRoot": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main",
+  "generatedAt": "2026-03-18T00:00:00Z",
+  "statistic": {
+    "sourceFileCount": 100,
+    "layoutCount": 59,
+    "menuCount": 12,
+    "pageCount": 31,
+    "activityCount": 18,
+    "fragmentCount": 3,
+    "dialogCount": 23,
+    "adapterCount": 9
+  },
+  "pages": [
+    {
+      "name": "SplashActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\SplashActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [],
+        "menus": [],
+        "classes": [
+          {
+            "name": "MainActivity",
+            "kind": "activity",
+            "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\MainActivity.kt"
+          }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "MainActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\MainActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [
+          { "name": "activity_main", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\activity_main.xml" }
+        ],
+        "menus": [
+          { "name": "menu_main", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\menu\\menu_main.xml" },
+          { "name": "menu_main_intent", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\menu\\menu_main_intent.xml" }
+        ],
+        "classes": [
+          { "name": "DirectoryAdapter", "kind": "adapter", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\DirectoryAdapter.kt" },
+          { "name": "MediaFetcher", "kind": "helper", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\helpers\\MediaFetcher.kt" },
+          { "name": "ChangeSortingDialog", "kind": "dialog", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\ChangeSortingDialog.kt" },
+          { "name": "ChangeViewTypeDialog", "kind": "dialog", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\ChangeViewTypeDialog.kt" },
+          { "name": "FilterMediaDialog", "kind": "dialog", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\FilterMediaDialog.kt" },
+          { "name": "GrantAllFilesDialog", "kind": "dialog", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\GrantAllFilesDialog.kt" }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "MediaActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\MediaActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [
+          { "name": "activity_media", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\activity_media.xml" }
+        ],
+        "menus": [
+          { "name": "menu_media", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\menu\\menu_media.xml" }
+        ],
+        "classes": [
+          { "name": "MediaAdapter", "kind": "adapter", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\MediaAdapter.kt" },
+          { "name": "GetMediaAsynctask", "kind": "helper", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\asynctasks\\GetMediaAsynctask.kt" }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "SearchActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\SearchActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [
+          { "name": "activity_search", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\activity_search.xml" }
+        ],
+        "menus": [
+          { "name": "menu_search", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\menu\\menu_search.xml" }
+        ],
+        "classes": [
+          { "name": "MediaAdapter", "kind": "adapter", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\MediaAdapter.kt" }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ViewPagerActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\ViewPagerActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [
+          { "name": "activity_medium", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\activity_medium.xml" }
+        ],
+        "menus": [
+          { "name": "menu_viewpager", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\menu\\menu_viewpager.xml" },
+          { "name": "photo_video_menu", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\menu\\photo_video_menu.xml" }
+        ],
+        "classes": [
+          { "name": "MyPagerAdapter", "kind": "adapter", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\MyPagerAdapter.kt" },
+          { "name": "PhotoFragment", "kind": "fragment", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\fragments\\PhotoFragment.kt" },
+          { "name": "VideoFragment", "kind": "fragment", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\fragments\\VideoFragment.kt" },
+          { "name": "SlideshowDialog", "kind": "dialog", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\SlideshowDialog.kt" },
+          { "name": "SaveAsDialog", "kind": "dialog", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\SaveAsDialog.kt" }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "PhotoActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\PhotoActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [],
+        "menus": [],
+        "classes": [
+          {
+            "name": "PhotoVideoActivity",
+            "kind": "activity",
+            "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\PhotoVideoActivity.kt"
+          }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "VideoActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\VideoActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [],
+        "menus": [],
+        "classes": [
+          {
+            "name": "PhotoVideoActivity",
+            "kind": "activity",
+            "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\PhotoVideoActivity.kt"
+          }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "PhotoVideoActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\PhotoVideoActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [
+          { "name": "fragment_holder", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\fragment_holder.xml" }
+        ],
+        "menus": [],
+        "classes": [
+          { "name": "PhotoFragment", "kind": "fragment", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\fragments\\PhotoFragment.kt" },
+          { "name": "VideoFragment", "kind": "fragment", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\fragments\\VideoFragment.kt" }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "VideoPlayerActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\VideoPlayerActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [
+          { "name": "activity_video_player", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\activity_video_player.xml" }
+        ],
+        "menus": [
+          { "name": "menu_video_player", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\menu\\menu_video_player.xml" }
+        ],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "PanoramaPhotoActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\PanoramaPhotoActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [
+          { "name": "activity_panorama_photo", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\activity_panorama_photo.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "PanoramaVideoActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\PanoramaVideoActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [
+          { "name": "activity_panorama_video", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\activity_panorama_video.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "SettingsActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\SettingsActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [
+          { "name": "activity_settings", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\activity_settings.xml" }
+        ],
+        "menus": [],
+        "classes": [
+          { "name": "CustomizationActivity", "kind": "activity", "file": "external" },
+          { "name": "AboutActivity", "kind": "activity", "file": "external" }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "EditActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\EditActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [
+          { "name": "activity_edit", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\activity_edit.xml" },
+          { "name": "bottom_editor_primary_actions", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\bottom_editor_primary_actions.xml" },
+          { "name": "bottom_editor_crop_rotate_actions", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\bottom_editor_crop_rotate_actions.xml" },
+          { "name": "bottom_editor_draw_actions", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\bottom_editor_draw_actions.xml" },
+          { "name": "bottom_editor_actions_filter", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\bottom_editor_actions_filter.xml" },
+          { "name": "editor_filter_item", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\editor_filter_item.xml" }
+        ],
+        "menus": [
+          { "name": "menu_editor", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\menu\\menu_editor.xml" }
+        ],
+        "classes": [
+          { "name": "FiltersAdapter", "kind": "adapter", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\FiltersAdapter.kt" },
+          { "name": "OtherAspectRatioDialog", "kind": "dialog", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\OtherAspectRatioDialog.kt" },
+          { "name": "ResizeDialog", "kind": "dialog", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\ResizeDialog.kt" },
+          { "name": "SaveAsDialog", "kind": "dialog", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\SaveAsDialog.kt" }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "SetWallpaperActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\SetWallpaperActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [
+          { "name": "activity_set_wallpaper", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\activity_set_wallpaper.xml" },
+          { "name": "bottom_set_wallpaper_actions", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\bottom_set_wallpaper_actions.xml" }
+        ],
+        "menus": [
+          { "name": "menu_set_wallpaper", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\menu\\menu_set_wallpaper.xml" }
+        ],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "WidgetConfigureActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\WidgetConfigureActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [
+          { "name": "activity_widget_config", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\activity_widget_config.xml" }
+        ],
+        "menus": [],
+        "classes": [
+          { "name": "PickDirectoryDialog", "kind": "dialog", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\PickDirectoryDialog.kt" }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "IncludedFoldersActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\IncludedFoldersActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [
+          { "name": "activity_manage_folders", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\activity_manage_folders.xml" }
+        ],
+        "menus": [
+          { "name": "menu_included_folders", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\menu\\menu_included_folders.xml" }
+        ],
+        "classes": [
+          { "name": "ManageFoldersAdapter", "kind": "adapter", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\ManageFoldersAdapter.kt" }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ExcludedFoldersActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\ExcludedFoldersActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [
+          { "name": "activity_manage_folders", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\activity_manage_folders.xml" }
+        ],
+        "menus": [],
+        "classes": [
+          { "name": "ManageFoldersAdapter", "kind": "adapter", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\ManageFoldersAdapter.kt" }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "HiddenFoldersActivity",
+      "kind": "activity",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\activities\\HiddenFoldersActivity.kt",
+      "package": "com.simplemobiletools.gallery.pro.activities",
+      "dependencies": {
+        "layouts": [
+          { "name": "activity_manage_folders", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\activity_manage_folders.xml" }
+        ],
+        "menus": [
+          { "name": "cab_hidden_folders", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\menu\\cab_hidden_folders.xml" }
+        ],
+        "classes": [
+          { "name": "ManageHiddenFoldersAdapter", "kind": "adapter", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\ManageHiddenFoldersAdapter.kt" }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ViewPagerFragment",
+      "kind": "fragment",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\fragments\\ViewPagerFragment.kt",
+      "package": "com.simplemobiletools.gallery.pro.fragments",
+      "dependencies": {
+        "layouts": [],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "PhotoFragment",
+      "kind": "fragment",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\fragments\\PhotoFragment.kt",
+      "package": "com.simplemobiletools.gallery.pro.fragments",
+      "dependencies": {
+        "layouts": [
+          { "name": "pager_photo_item", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\pager_photo_item.xml" },
+          { "name": "portrait_photo_item", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\portrait_photo_item.xml" }
+        ],
+        "menus": [],
+        "classes": [
+          { "name": "PortraitPhotosAdapter", "kind": "adapter", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\PortraitPhotosAdapter.kt" }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "VideoFragment",
+      "kind": "fragment",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\fragments\\VideoFragment.kt",
+      "package": "com.simplemobiletools.gallery.pro.fragments",
+      "dependencies": {
+        "layouts": [
+          { "name": "pager_video_item", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\pager_video_item.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "SlideshowDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\SlideshowDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_slideshow", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_slideshow.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "SaveAsDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\SaveAsDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_save_as", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_save_as.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "FilterMediaDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\FilterMediaDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_filter_media", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_filter_media.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ResizeDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\ResizeDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_resize_image", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_resize_image.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ResizeMultipleImagesDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\ResizeMultipleImagesDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_resize_multiple_images", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_resize_multiple_images.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ResizeWithPathDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\ResizeWithPathDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_resize_image_with_path", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_resize_image_with_path.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "OtherAspectRatioDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\OtherAspectRatioDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_other_aspect_ratio", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_other_aspect_ratio.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "CustomAspectRatioDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\CustomAspectRatioDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_custom_aspect_ratio", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_custom_aspect_ratio.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "PickDirectoryDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\PickDirectoryDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_directory_picker", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_directory_picker.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "PickMediumDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\PickMediumDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_medium_picker", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_medium_picker.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ChangeSortingDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\ChangeSortingDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_change_sorting", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_change_sorting.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ChangeViewTypeDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\ChangeViewTypeDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_change_view_type", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_change_view_type.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ChangeGroupingDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\ChangeGroupingDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_change_grouping", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_change_grouping.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ChangeFileThumbnailStyleDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\ChangeFileThumbnailStyleDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_change_file_thumbnail_style", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_change_file_thumbnail_style.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ChangeFolderThumbnailStyleDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\ChangeFolderThumbnailStyleDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_change_folder_thumbnail_style", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_change_folder_thumbnail_style.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ExcludeFolderDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\ExcludeFolderDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_exclude_folder", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_exclude_folder.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ConfirmDeleteFolderDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\ConfirmDeleteFolderDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_confirm_delete_folder", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_confirm_delete_folder.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "DeleteWithRememberDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\DeleteWithRememberDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_delete_with_remember", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_delete_with_remember.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ManageExtendedDetailsDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\ManageExtendedDetailsDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_manage_extended_details", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_manage_extended_details.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ManageBottomActionsDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\ManageBottomActionsDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_manage_bottom_actions", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_manage_bottom_actions.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ExportFavoritesDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\ExportFavoritesDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_export_favorites", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_export_favorites.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "GrantAllFilesDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\GrantAllFilesDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [
+          { "name": "dialog_grant_all_files", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\dialog_grant_all_files.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "AllFilesPermissionDialog",
+      "kind": "dialog",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\dialogs\\AllFilesPermissionDialog.kt",
+      "package": "com.simplemobiletools.gallery.pro.dialogs",
+      "dependencies": {
+        "layouts": [],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "DirectoryAdapter",
+      "kind": "adapter",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\DirectoryAdapter.kt",
+      "package": "com.simplemobiletools.gallery.pro.adapters",
+      "dependencies": {
+        "layouts": [
+          { "name": "directory_item_grid_square", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\directory_item_grid_square.xml" },
+          { "name": "directory_item_grid_rounded_corners", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\directory_item_grid_rounded_corners.xml" },
+          { "name": "directory_item_list", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\directory_item_list.xml" }
+        ],
+        "menus": [
+          { "name": "cab_directories", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\menu\\cab_directories.xml" }
+        ],
+        "classes": [
+          { "name": "DirectoryItemBinding", "kind": "viewholder", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\DirectoryItemBinding.kt" }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "MediaAdapter",
+      "kind": "adapter",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\MediaAdapter.kt",
+      "package": "com.simplemobiletools.gallery.pro.adapters",
+      "dependencies": {
+        "layouts": [
+          { "name": "photo_item_grid", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\photo_item_grid.xml" },
+          { "name": "photo_item_list", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\photo_item_list.xml" },
+          { "name": "video_item_grid", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\video_item_grid.xml" },
+          { "name": "video_item_list", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\video_item_list.xml" }
+        ],
+        "menus": [
+          { "name": "cab_media", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\menu\\cab_media.xml" }
+        ],
+        "classes": [
+          { "name": "MediaItemBinding", "kind": "viewholder", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\MediaItemBinding.kt" }
+        ]
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "MyPagerAdapter",
+      "kind": "adapter",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\MyPagerAdapter.kt",
+      "package": "com.simplemobiletools.gallery.pro.adapters",
+      "dependencies": {
+        "layouts": [],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "PortraitPhotosAdapter",
+      "kind": "adapter",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\PortraitPhotosAdapter.kt",
+      "package": "com.simplemobiletools.gallery.pro.adapters",
+      "dependencies": {
+        "layouts": [
+          { "name": "portrait_photo_item", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\portrait_photo_item.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ManageFoldersAdapter",
+      "kind": "adapter",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\ManageFoldersAdapter.kt",
+      "package": "com.simplemobiletools.gallery.pro.adapters",
+      "dependencies": {
+        "layouts": [
+          { "name": "item_manage_folder", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\item_manage_folder.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "ManageHiddenFoldersAdapter",
+      "kind": "adapter",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\ManageHiddenFoldersAdapter.kt",
+      "package": "com.simplemobiletools.gallery.pro.adapters",
+      "dependencies": {
+        "layouts": [
+          { "name": "item_manage_folder", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\item_manage_folder.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    },
+    {
+      "name": "FiltersAdapter",
+      "kind": "adapter",
+      "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\kotlin\\com\\simplemobiletools\\gallery\\pro\\adapters\\FiltersAdapter.kt",
+      "package": "com.simplemobiletools.gallery.pro.adapters",
+      "dependencies": {
+        "layouts": [
+          { "name": "editor_filter_item", "file": "D:\\android2hmos\\origianal_apps\\Simple-Gallery-master\\app\\src\\main\\res\\layout\\editor_filter_item.xml" }
+        ],
+        "menus": [],
+        "classes": []
+      },
+      "unresolved": { "layouts": [], "menus": [] },
+      "status": "done"
+    }
+  ]
+}
